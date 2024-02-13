@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1eea094-6a68-4f40-b4d0-81b7c18c59b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/HomePageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/LoginPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/RegisterPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/golbals/Globals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/BaseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegisterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestHomePage.java" afterDir="false" />
+    <list default="true" id="f1eea094-6a68-4f40-b4d0-81b7c18c59b3" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/elements/DashboardPageElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,14 +68,14 @@
       <recent name="C:\Users\User\Desktop\NobCommerce\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DashboardTest">
+    <configuration name="DashboardTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NobCommerce" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="DashboardTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -142,11 +129,11 @@
       <item itemvalue="TestNG.RegisterTest" />
       <item itemvalue="TestNG.RegisterTest.testLoginButton" />
       <item itemvalue="TestNG.RegisterTest.testRegister" />
-      <item itemvalue="TestNG.LoginTest" />
+      <item itemvalue="TestNG.DashboardTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.DashboardTest" />
         <item itemvalue="TestNG.RegisterTest" />
         <item itemvalue="TestNG.RegisterTest.testRegister" />
         <item itemvalue="TestNG.RegisterTest.testLoginButton" />
@@ -163,12 +150,25 @@
       <updated>1706957009169</updated>
       <workItem from="1706957011061" duration="13994000" />
       <workItem from="1706983428438" duration="3770000" />
-      <workItem from="1707403350473" duration="30876000" />
+      <workItem from="1707403350473" duration="53543000" />
+      <workItem from="1707849951036" duration="3035000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1707753564865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707753564865</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

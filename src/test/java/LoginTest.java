@@ -18,8 +18,8 @@ public class LoginTest {
     @Test
     public void testLogin(){
         loginPage.clickLoginMenu();
-        loginPage.fillEmail("ersaq@gmail.com");
-        loginPage.fillPassword("ersa123");
+        loginPage.fillEmail("elisamata27@gmail.com");
+        loginPage.fillPassword("nikola123");
         loginPage.clickLoginButton();
         if (loginPage.isWelcomeTextDisplayed()) {
             System.out.println("Welcome text is displayed.");
