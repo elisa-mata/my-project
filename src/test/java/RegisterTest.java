@@ -26,7 +26,7 @@ public class RegisterTest {
         registrationPage.fillFirstName("Elisa Nikola");
         registrationPage.fillLastName("Mata");
         registrationPage.selectDateOfBirth("27", "January", "2003");
-        registrationPage.fillEmail("hekur1234@gmail.com");
+        registrationPage.fillEmail("hekur12345@gmail.com");
         registrationPage.fillCompanyName("abc Company");
         registrationPage.uncheckNewsletterBox();
         registrationPage.checkNewsletterBox();
