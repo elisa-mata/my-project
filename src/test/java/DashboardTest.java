@@ -1,3 +1,4 @@
+import elements.DashboardPageElements;
 import golbals.Globals;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -12,6 +13,8 @@ public class DashboardTest {
     LoginPage loginPage1 = new LoginPage();
     DashboardPage dashboardPage = new DashboardPage();
 
+
+
     @BeforeTest
     public void setup(){
         driver.get(Globals.homePageUrl);
@@ -20,7 +23,7 @@ public class DashboardTest {
   @Test
     public void dashboardFunctionality(){
         loginPage1.clickLoginMenu();
-      loginPage1.fillEmail("hekur12@gmail.com");
+      loginPage1.fillEmail("hekur1234@gmail.com");
       loginPage1.fillPassword("nikola123");
       loginPage1.clickLoginButton();
 
@@ -29,11 +32,22 @@ public class DashboardTest {
       boolean isCellPhoneNav = dashboardPage.isCellPhonePageNavigated();
       Assert.assertTrue(isCellPhoneNav, "Navigation to Cell phones page failed");
 dashboardPage.selectSortingByPrice();
-dashboardPage.addItemstoWishlist();
-int wishListItemcount = dashboardPage.getWishlistItemCoun();
-Assert.assertEquals(wishListItemcount, 3, "Wishlist count is not as expected");
+
+dashboardPage.addItemToWishList1();
+      int wishlistItemCount1 = dashboardPage.getWishListItem();
+      Assert.assertTrue(wishlistItemCount1 > 0, "Wishlist item count is not greater than 0");
+      dashboardPage.addItemToWishlist2();
+      int wishlistItemCount2 = dashboardPage.getWishListItem();
+      Assert.assertTrue(wishlistItemCount2 > 1, "Wishlist item count after adding the second item is not greater than 1");
+      dashboardPage.addItemToWishlist3();
+      int wishlistItemCount3 = dashboardPage.getWishListItem();
+      Assert.assertTrue(wishlistItemCount3 > 2, "Wishlist item count after adding the third item is not greater than 2");
+      int wishlistItemCount = dashboardPage.getWishListItem();
+      Assert.assertEquals(wishlistItemCount, 3, "Wishlist count is not as expected");
+
   }
 
 
 }
+
 

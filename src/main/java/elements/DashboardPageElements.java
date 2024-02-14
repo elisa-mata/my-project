@@ -18,10 +18,14 @@ public class DashboardPageElements {
     public WebElement cellphoneMenuItem;
     @FindBy (css = "select[id ='products-orderby']")
     public  WebElement sortingDropdown;
-    @FindBy(xpath = "//button[@class='button-2 add-to-wishlist-button']")
-    public List <WebElement> addToWishListButtons;
+    @FindBy(xpath = "//button[contains(@onclick, '/addproducttocart/catalog/19/2/1') and @title='Add to wishlist']")
+    public WebElement addToWishListButton1;
+    @FindBy(xpath = "//button[contains(@onclick, '/addproducttocart/catalog/18/2/1') and @title='Add to wishlist']")
+    public WebElement addToWishListButton2;
+    @FindBy(xpath = "//button[contains(@onclick, '/addproducttocart/catalog/20/2/1') and @title='Add to wishlist']")
+    public WebElement addToWishListButton3;
     @FindBy(xpath = "//p[contains(@class, 'content')]")
     public WebElement notificationMessage;
-    @FindBy(xpath = "//span[@class='wishlist-label']")
+    @FindBy(xpath = "/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[3]/a/span[2]")
     public WebElement wishListMenu;
 }
