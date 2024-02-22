@@ -3,57 +3,40 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.TestListenerAdapter;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
-import pages.LoginPage;
 import utilities.BaseInfo;
-
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.util.List;
 import java.util.stream.IntStream;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-//import elements.DashboardPageElements;
-//import golbals.Globals;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.support.ui.WebDriverWait;
-//import org.testng.Assert;
-//import org.testng.annotations.BeforeTest;
-//import org.testng.annotations.Test;
-//import pages.DashboardPage;
-//import pages.LoginPage;
-//import utilities.BaseInfo;
-//import static org.testng.Assert.assertEquals;
 
-//@Test(groups = {"dashboard"}, dependsOnGroups = {"login"})
-//@Listeners(TestListenerAdapter.class)
+//Test 3: Dashboard Test
 public class DashboardTest {
-    private final DashboardPage dashboardPage = new DashboardPage();
-    private final WebDriver driver = BaseInfo.getDriver();
-    private final LoginPage loginPage = new LoginPage();
+    DashboardPage dashboardPage = new DashboardPage();
+    WebDriver driver = BaseInfo.getDriver();
+    LoginTest loginTest = new LoginTest();
 
     @BeforeClass
     public void setup() {
         driver.get(Globals.homePageUrl);
     }
-
+    //Precondition: Log in nopCommerce Application
     @Test(priority = 0)
-    public void testGoToCellPhones() {
-        loginPage.clickLoginMenu();
-        loginPage.fillEmail("hekur1234@gmail.com");
-        loginPage.fillPassword("nikola123");
-        loginPage.clickLoginButton();
-        dashboardPage.navigateToCellPhones();
-        assertTrue(dashboardPage.isInCellPhones());
-    }
+    public void PreConditionLogIn(){loginTest.testLogin();}
 
+    //1. Hover over Electronics Menu
     @Test(priority = 1)
-    public void testSortItems() throws InterruptedException {
+    public void CellPhoneMenu() throws InterruptedException {
+        //2. Click Cell phones
+        dashboardPage.navigateToCellPhones();
+        //3. Verify that we have navigated to Cell phones page (Electronic and Cell phones menu items have different color)
+        assertTrue(dashboardPage.isInCellPhones());
+        //4. Apply Sort Price: Low to High and check that items displayed are sorted by the price.
         dashboardPage.sortLowToHigh();
         new WebDriverWait(BaseInfo.getDriver(), Duration.ofSeconds(3)).until(ExpectedConditions.invisibilityOf(dashboardPage.getAjaxInProgress()));
         List<BigDecimal> prices = dashboardPage.getPriceList().stream()
@@ -66,7 +49,8 @@ public class DashboardTest {
                 .allMatch(i -> prices.get(i).compareTo(prices.get(i + 1)) <= 0);
         assertTrue(isAscending);
     }
-
+    //5. Add all three items in wishlist. Verify that after every item is added, a notification with text:
+    // The product has been added to your wishlist – is displayed.
     @Test(priority = 2)
     public void testAddToWishlist() {
         dashboardPage.wishlistFirstItem();
@@ -75,65 +59,21 @@ public class DashboardTest {
         dashboardPage.waitForNotificationFade();
         dashboardPage.wishlistThirdItem();
         dashboardPage.waitForNotificationFade();
+        //6. Verify that Wishlist on Menu bar displays (3).
         assertEquals(dashboardPage.getWishlistQuantity(), 3);
     }
 
+    //7. Click Wishlist menu, select all three products and click Add To Cart button.
     @Test(priority = 3)
     public void testWishlistToCart() {
         dashboardPage.goToWishlist();
         dashboardPage.selectAllWishlistProducts();
         dashboardPage.clickAddToCart();
+        //8. Verify that now Wishlist displays (0) and Shopping cart (3).
         assertEquals(dashboardPage.getWishlistQuantity(), 0);
         assertEquals(dashboardPage.getCartQuantity(), 3);
     }
+    //9. Close the browser.
+    @AfterTest
+    public void terminate() {driver.quit();}
 }
-
-//    WebDriver driver = BaseInfo.getDriver();
-//    LoginPage loginPage1 = new LoginPage();
-//    DashboardPage dashboardPage = new DashboardPage();
-//
-//
-//
-//    @BeforeTest
-//    public void setup(){
-//        driver.get(Globals.homePageUrl);
-//    }
-//
-//  @Test
-//    public void dashboardFunctionality(){
-//        loginPage1.clickLoginMenu();
-//      loginPage1.fillEmail("hekur1234@gmail.com");
-//      loginPage1.fillPassword("nikola123");
-//      loginPage1.clickLoginButton();
-//
-//      dashboardPage.hoverOverElectronicsMenu();
-//      dashboardPage.clickCellPhones();
-//      boolean isCellPhoneNav = dashboardPage.isCellPhonePageNavigated();
-//      Assert.assertTrue(isCellPhoneNav, "Navigation to Cell phones page failed");
-//dashboardPage.selectSortingByPrice();
-//
-//      dashboardPage.wishlistFirstItem();
-//      dashboardPage.();
-//      dashboardPage.wishlistSecondItem();
-//      dashboardPage.waitForNotificationFade();
-//      dashboardPage.wishlistThirdItem();
-//      dashboardPage.waitForNotificationFade();
-//      assertEquals(dashboardPage.getWishlistQuantity(), 3);
-//dashboardPage.addItemToWishList1();
-////      int wishlistItemCount1 = dashboardPage.getWishListItem();
-////      Assert.assertTrue(wishlistItemCount1 > 0, "Wishlist item count is not greater than 0");
-//      dashboardPage.addItemToWishlist2();
-////      int wishlistItemCount2 = dashboardPage.getWishListItem();
-////      Assert.assertTrue(wishlistItemCount2 > 1, "Wishlist item count after adding the second item is not greater than 1");
-//      dashboardPage.addItemToWishlist3();
-////      int wishlistItemCount3 = dashboardPage.getWishListItem();
-////      Assert.assertTrue(wishlistItemCount3 > 2, "Wishlist item count after adding the third item is not greater than 2");
-//      int wishlistItemCount = dashboardPage.getWishListItem();
-//      Assert.assertEquals(wishlistItemCount, 3, "Wishlist count is not as expected");
-
-//  }
-//
-//
-//}
-
-

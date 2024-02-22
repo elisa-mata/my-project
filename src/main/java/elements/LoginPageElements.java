@@ -9,7 +9,7 @@ public class LoginPageElements {
     public LoginPageElements (){
         PageFactory.initElements(BaseInfo.getDriver(), this);
     }
-@FindBy (xpath = "/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a")
+    @FindBy (xpath = "/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a")
     public WebElement loginMenu;
     @FindBy(css = "input[id ='Email']")
     public  WebElement emailInput;

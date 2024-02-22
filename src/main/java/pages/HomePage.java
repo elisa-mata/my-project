@@ -1,17 +1,14 @@
 package pages;
 
 import elements.HomePageElements;
+import org.openqa.selenium.support.PageFactory;
+import utilities.BaseInfo;
 
 public class HomePage {
     HomePageElements homePageElements = new HomePageElements();
-
-
-    public void clickLoginButton(){
-        homePageElements.loginButton.click();
-
+    public HomePage() {
+        PageFactory.initElements(BaseInfo.getDriver(), this);
     }
-    public RegistrationPage clickRegisterButton(){
-        homePageElements.registerButton.click();
-        return new RegistrationPage();
-    }
+    public void clickLoginButton(){homePageElements.loginButton.click();}
+    public void clickRegisterButton(){homePageElements.registerButton.click();}
 }

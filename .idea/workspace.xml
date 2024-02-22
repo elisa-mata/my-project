@@ -5,11 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1eea094-6a68-4f40-b4d0-81b7c18c59b3" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/elements/ShoppingPageElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ShoppingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShoppingCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/elements/DashboardPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/DashboardPageElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/elements/HomePageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/HomePageElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/elements/LoginPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/LoginPageElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/elements/RegisterPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/RegisterPageElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DashboardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestHomePage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +37,36 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;janak03&quot;,
+      &quot;fullname&quot;: &quot;Jana k&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/elisa003/automationproject.git&quot;,
+    &quot;second&quot;: &quot;0c4dc972-6e75-4f6c-83e7-1498cdbbd24c&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2bqyfWs8m0nDIa4wQjnTWZq7hFQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,56 +75,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/NobCommerce&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.DashboardTest.Login.executor": "Run",
+    "TestNG.DashboardTest.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.RegisterTest.executor": "Run",
+    "TestNG.ShoppingCartTest.ShoppingCartTest.executor": "Run",
+    "TestNG.ShoppingCartTest.executor": "Run",
+    "TestNG.ShoppingTest.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Final",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/janar/IdeaProjects/test-automation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\NobCommerce\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DashboardTest">
+  <component name="RunManager" selected="TestNG.ShoppingCartTest">
     <configuration name="DashboardTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NobCommerce" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DashboardTest" />
-      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashboardTest.testAddToWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NobCommerce" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DashboardTest" />
-      <option name="METHOD_NAME" value="testAddToWishlist" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -112,23 +141,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest.testLoginButton" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NobCommerce" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
-      <option name="METHOD_NAME" value="testLoginButton" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest.testRegister" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTest.ShoppingCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NobCommerce" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
-      <option name="METHOD_NAME" value="testRegister" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
+      <option name="METHOD_NAME" value="ShoppingCartTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,19 +165,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.DashboardTest.testAddToWishlist" />
-      <item itemvalue="TestNG.RegisterTest" />
-      <item itemvalue="TestNG.RegisterTest.testLoginButton" />
-      <item itemvalue="TestNG.RegisterTest.testRegister" />
+      <item itemvalue="TestNG.LoginTest" />
       <item itemvalue="TestNG.DashboardTest" />
+      <item itemvalue="TestNG.ShoppingCartTest.ShoppingCartTest" />
+      <item itemvalue="TestNG.ShoppingCartTest" />
+      <item itemvalue="TestNG.RegisterTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ShoppingCartTest" />
         <item itemvalue="TestNG.DashboardTest" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.RegisterTest" />
-        <item itemvalue="TestNG.DashboardTest.testAddToWishlist" />
-        <item itemvalue="TestNG.RegisterTest.testRegister" />
-        <item itemvalue="TestNG.RegisterTest.testLoginButton" />
+        <item itemvalue="TestNG.ShoppingCartTest.ShoppingCartTest" />
       </list>
     </recent_temporary>
   </component>
@@ -194,19 +222,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/LoginTest.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -7,18 +7,8 @@ import org.openqa.selenium.support.ui.Select;
 import utilities.BaseInfo;
 
 public class RegistrationPage {
-    public RegistrationPage (){
-        PageFactory.initElements(BaseInfo.getDriver(),this);
-    }
+    public RegistrationPage (){PageFactory.initElements(BaseInfo.getDriver(),this);}
     RegisterPageElements registerPageElements =  new RegisterPageElements();
-    public void clickLoginButton(){
-        registerPageElements.loginButton.click();
-
-    }
-    public RegistrationPage clickRegisterButton(){
-        registerPageElements.registerButton.click();
-        return new RegistrationPage();
-    }
     public void clickRadioFemale(){
         registerPageElements.radioButtonFemale.click();
     }
@@ -28,9 +18,9 @@ public class RegistrationPage {
     public void fillLastName (String lastName) {
         registerPageElements.lastNameInput.sendKeys(lastName);
     }
-public void selectDateOfBirth(String day, String month, String year ){
-selectFromDropdown(registerPageElements.selectDayDropdown, day );
-selectFromDropdown(registerPageElements.selectMonthDropdown, month);
+    public void selectDateOfBirth(String day, String month, String year ){
+    selectFromDropdown(registerPageElements.selectDayDropdown, day );
+    selectFromDropdown(registerPageElements.selectMonthDropdown, month);
     selectFromDropdown(registerPageElements.selectYearDropdown, year );
     }
     public void fillEmail(String email) {
@@ -52,19 +42,14 @@ selectFromDropdown(registerPageElements.selectMonthDropdown, month);
     }
     public void checkNewsletterBox(){
         WebElement checkbox = registerPageElements.newsletterCheckbox;
-        if (!checkbox.isSelected()) {
-            checkbox.click();
-        }
-        }
-        public void fillPassword(String password){
-        registerPageElements.passwordInput.sendKeys(password);
-        }
-        public void confirmPassword(String password){
+        if (!checkbox.isSelected()) {checkbox.click();}
+    }
+    public void fillPassword(String password){registerPageElements.passwordInput.sendKeys(password);}
+    public void confirmPassword(String password){
         registerPageElements.confirmPasswordInput.sendKeys(password);
         }
-        public void registerbutton(){
-        registerPageElements.regbutton.click();
-        }
+    public void registerButton(){registerPageElements.registrationButton.click();}
+    public boolean registerConfirm(){return registerPageElements.registrationCompleted.isDisplayed();}
 
     }
 
