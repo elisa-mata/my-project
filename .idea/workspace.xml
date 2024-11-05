@@ -4,219 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1eea094-6a68-4f40-b4d0-81b7c18c59b3" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/ShoppingPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ShoppingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShoppingCartTest.java" afterDir="false" />
+    <list default="true" id="7274b554-3853-4189-9ac6-e229e16c8e3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/DashboardPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/DashboardPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/HomePageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/HomePageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/LoginPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/LoginPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/elements/RegisterPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/elements/RegisterPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DashboardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestHomePage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="package-info" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitLabMergeRequestFiltersHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPENED&quot;,
-    &quot;assignee&quot;: {
-      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
-      &quot;username&quot;: &quot;janak03&quot;,
-      &quot;fullname&quot;: &quot;Jana k&quot;
-    }
-  }
-}</component>
-  <component name="GitLabMergeRequestsSettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;first&quot;: &quot;https://gitlab.com/elisa003/automationproject.git&quot;,
-    &quot;second&quot;: &quot;0c4dc972-6e75-4f6c-83e7-1498cdbbd24c&quot;
-  }
-}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2bqyfWs8m0nDIa4wQjnTWZq7hFQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
+  <component name="ProjectId" id="2cirxxAXtl4d0vPXtZAy1CDpchI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.DashboardTest.Login.executor": "Run",
-    "TestNG.DashboardTest.executor": "Run",
-    "TestNG.LoginTest.executor": "Run",
-    "TestNG.RegisterTest.executor": "Run",
-    "TestNG.ShoppingCartTest.ShoppingCartTest.executor": "Run",
-    "TestNG.ShoppingCartTest.executor": "Run",
-    "TestNG.ShoppingTest.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Final",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/janar/IdeaProjects/test-automation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/automationproject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\NobCommerce\src\main\resources" />
-    </key>
-  </component>
-  <component name="RunManager" selected="TestNG.ShoppingCartTest">
-    <configuration name="DashboardTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NobCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DashboardTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NobCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NobCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NobCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingCartTest.ShoppingCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NobCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="ShoppingCartTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="TestNG.LoginTest" />
-      <item itemvalue="TestNG.DashboardTest" />
-      <item itemvalue="TestNG.ShoppingCartTest.ShoppingCartTest" />
-      <item itemvalue="TestNG.ShoppingCartTest" />
-      <item itemvalue="TestNG.RegisterTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.ShoppingCartTest" />
-        <item itemvalue="TestNG.DashboardTest" />
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.RegisterTest" />
-        <item itemvalue="TestNG.ShoppingCartTest.ShoppingCartTest" />
-      </list>
-    </recent_temporary>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1eea094-6a68-4f40-b4d0-81b7c18c59b3" name="Changes" comment="" />
-      <created>1706957009169</created>
+      <changelist id="7274b554-3853-4189-9ac6-e229e16c8e3b" name="Changes" comment="" />
+      <created>1708605492349</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706957009169</updated>
-      <workItem from="1706957011061" duration="13994000" />
-      <workItem from="1706983428438" duration="3770000" />
-      <workItem from="1707403350473" duration="53543000" />
-      <workItem from="1707849951036" duration="28212000" />
-      <workItem from="1707915667151" duration="1641000" />
+      <updated>1708605492349</updated>
+      <workItem from="1708605494592" duration="12979000" />
+      <workItem from="1709040942140" duration="106000" />
     </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <created>1707753564865</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1707753564865</updated>
-    </task>
-    <task id="LOCAL-00002" summary="first commit">
-      <created>1707853278583</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1707853278583</updated>
-    </task>
-    <task id="LOCAL-00003" summary="first commit">
-      <created>1707881048862</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1707881048862</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,9 +79,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

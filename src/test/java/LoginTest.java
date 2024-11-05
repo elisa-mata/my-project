@@ -8,6 +8,8 @@ import pages.HomePage;
 import pages.LoginPage;
 import utilities.BaseInfo;
 
+import static org.testng.Assert.assertTrue;
+
 //Test 2: Login Test
 public class LoginTest {
     WebDriver driver = BaseInfo.getDriver();
@@ -28,9 +30,9 @@ public class LoginTest {
         loginPage.clickLoginButton();
         //4. Verify that login is successful:
         //- “Welcome to our store text” - is displayed
-        if (loginPage.isWelcomeTextDisplayed()) {System.out.println("Welcome text is displayed.");}
-        //- Log out - Menu is displayed
-        Assert.assertTrue(loginPage.isLogoutMenuDisplayed(), "Logout menu is not displayed");
+        Assert.assertTrue(loginPage.isWelcomeTextDisplayed(), "Welcome text is not displayed after login");
+        assertTrue(loginPage.isLoggedIn());
+
     }
     //5. Log out
     @Test(priority = 1)
