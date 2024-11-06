@@ -1,0 +1,36 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #f3eddb ;
+}
+
+h3 {
+  font-family: Garamond, sans-serif;
+  color: #a6603a;
+  margin-top: 20px;
+  text-align: center;
+}
+
+p {
+  font-family: Garamond, sans-serif;
+  color: #444;
+  margin: 10px;
+  text-align: justify;
+  color: #a6603a;
+
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 270px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

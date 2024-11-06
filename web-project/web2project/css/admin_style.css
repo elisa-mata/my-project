@@ -1,0 +1,320 @@
+body {
+   background-color: #efe3b8;
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+
+.message-container {
+   position: absolute;
+   top: 10px;
+   width: 90%;
+   max-width: 600px;
+   z-index: 1000;
+}
+
+.message {
+   background-color: #444;
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.message i {
+   cursor: pointer;
+}
+
+.header {
+   background-color: #efe3b8;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   padding: 10px 20px;
+   position: relative;
+}
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   font-size: 24px;
+   font-weight: bold;
+   color: #333;
+   text-decoration: none;
+}
+
+.logo span {
+   color: #a6603a;
+}
+
+.navbar a {
+   margin: 0 15px;
+   color: #333;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+.navbar a:hover {
+   color: #666;
+}
+
+.logout-box {
+   display: flex;
+   align-items: center;
+}
+
+.btn {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #a6603a;
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+   margin-left: 15px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.btn:hover {
+   background-color: darkred;
+}
+
+.dashboard .title, .add-products .title {
+   text-align: center;
+   margin: 20px 0;
+   font-size: 2em;
+   color: #333;
+}
+
+.add-products {
+   padding: 20px;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.add-products h3 {
+   font-size: 1.8em;
+   color: #333;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.add-products .box {
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.add-products .btn {
+   width: 100%;
+   margin-top: 10px;
+   font-size: 1.2em;
+}
+
+.box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   padding: 20px;
+}
+
+.box {
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   text-align: center;
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+   max-width: 100%;
+   border-radius: 10px;
+   margin-bottom: 10px;
+}
+
+.box .name {
+   font-size: 1.5em;
+   color: #333;
+   margin-bottom: 5px;
+}
+
+.box .price {
+   font-size: 1.2em;
+   color: #a6603a;
+   margin-bottom: 15px;
+}
+
+.box .option-btn, .box .delete-btn {
+   display: inline-block;
+   padding: 10px 20px;
+   margin: 5px 0;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+.box .option-btn {
+   background-color: #a6603a;
+   color: white;
+}
+
+.box .option-btn:hover {
+   background-color: darkred;
+}
+
+.box .delete-btn {
+   background-color: darkred;
+   color: white;
+}
+
+.box .delete-btn:hover {
+   background-color: #a6603a;
+}
+
+.empty {
+   text-align: center;
+   font-size: 1.2em;
+   color: #666;
+   margin-top: 20px;
+}
+
+
+.edit-product-form {
+   min-height: 100vh;
+   background-color: rgba(0,0,0,.7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1200;
+   width: 100%;
+   overflow-y: auto;
+}
+
+.edit-product-form form {
+   width: 100%;
+   max-width: 600px;
+   padding: 2rem;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+}
+
+.edit-product-form form img {
+   max-width: 100px;
+   border-radius: 10px;
+   margin-bottom: 1rem;
+}
+
+.edit-product-form form .box {
+   width: 100%;
+   margin-bottom: 1rem;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+.edit-product-form form .btn {
+   width: 100%;
+   padding: 10px;
+   font-size: 1.2em;
+   background-color: #a6603a;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   margin-top: 1rem;
+}
+
+.edit-product-form form .btn:hover {
+   background-color: darkred;
+}
+
+.edit-product-form form .option-btn,
+.edit-product-form form .btn {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 1em;
+   background-color: #a6603a;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   margin-top: 1rem;
+}
+
+.edit-product-form form .option-btn:hover,
+.edit-product-form form .btn:hover {
+   background-color: darkred;
+}
+
+.edit-product-form form .buttons {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.orders .box-container .box p span{
+   color: #a6603a;
+}
+
+
+.box select[name="update_payment"] {
+   width: 100%;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   font-size: 1em;
+   color: #333;
+   background-color: #fff;
+   margin: 10px 0;
+   transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.box select[name="update_payment"]:hover,
+.box select[name="update_payment"]:focus {
+   border-color: #a6603a;
+   box-shadow: 0 0 5px rgba(166, 96, 58, 0.5);
+}
+
+.box select[name="update_payment"] option {
+   background-color: #fff;
+   color: #333;
+   padding: 10px;
+}
+
+.btn {
+   background-color: #a6603a;
+   color: #efe3b8;
+   border: none;
+   padding: 8px 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+   text-decoration: none;
+}
+
+.btn:hover {
+   background-color: #efe3b8;
+   color: #a6603a;
+}
