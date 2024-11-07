@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Manage Clinical Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="header-container">
+          <h2>Clinical Data Recordings for Patient: {{ patientName }}</h2>
+          <ion-button (click)="goBack()" class="back-button" color="light">Back</ion-button>
+        </div>
+
+        <div class="search-bar-container">
+          <ion-searchbar
+            class="custom-searchbar"
+            [(ngModel)]="searchTerm"
+            (ionInput)="filterClinicalData($event)"
+          ></ion-searchbar>
+          <ion-button (click)="addNewRecord()" class="create-button">Add New Record</ion-button>
+        </div>
+
+        <table class="clinical-data-table">
+          <thead>
+            <tr>
+              <th>Clinical Data</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of filteredClinicalData">
+              <td>{{ data.data }}</td>
+              <td>
+                <ion-button (click)="editClinicalData(data)" color="light">Edit</ion-button>
+                <ion-button (click)="confirmDeleteClinicalData(data)" color="danger">Delete</ion-button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,75 @@
+ion-content {
+  --background: #e3f2fd; /* Light blue */
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #0d47a1; /* Dark blue */
+}
+
+:host {
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .custom-searchbar {
+    --height: 40px; /* Adjusted to match departments */
+    --margin-right: 10px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --border-radius: 20px; /* Adjusted to match departments */
+    font-size: 14px;
+    flex: 1;
+  }
+
+  .create-button {
+    height: 40px; /* Adjusted to match departments */
+    line-height: 40px; /* Ensure the button text is vertically centered */
+    --padding-start: 15px;
+    --padding-end: 15px;
+    font-size: 14px;
+    color: white;
+    --border-radius: 20px; /* Adjusted to match departments */
+  }
+}
+
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
+  thead {
+    background-color: #0d47a1; /* Dark blue */
+    color: white;
+
+    th {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #ddd;
+
+      &:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      td {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.button-row {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}

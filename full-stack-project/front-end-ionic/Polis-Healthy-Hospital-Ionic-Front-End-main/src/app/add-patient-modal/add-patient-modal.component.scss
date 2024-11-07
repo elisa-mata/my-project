@@ -1,0 +1,40 @@
+ion-content {
+    --background: #e3f2fd; 
+  }
+  
+  ion-header, ion-toolbar, ion-title {
+    --background: #0d47a1; 
+    --color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #0d47a1; 
+  }
+  
+  .styled-item {
+    --background: #e3f2fd; 
+    --color: #0d47a1; 
+    --highlight-color-focused: #0d47a1; 
+  
+    --highlight-color-valid: #0d47a1; 
+  }
+  
+  ion-label {
+    color: #0d47a1; 
+  }
+  
+  ion-select {
+    --color: #0d47a1; 
+  
+  .confirm-button {
+    background-color: #0d47a1;
+    color: white;
+  }
+  
+  ion-button {
+    --border-radius: 20px; 
+    margin-top: 10px;
+  }
+}

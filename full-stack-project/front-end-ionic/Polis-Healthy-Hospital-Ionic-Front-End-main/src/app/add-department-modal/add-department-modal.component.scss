@@ -1,0 +1,27 @@
+ion-content {
+    --background: #e3f2fd; 
+  }
+  
+  ion-header, ion-toolbar, ion-title {
+    --background: #0d47a1; 
+    --color: white;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
+  .confirm-button {
+    background-color: #0d47a1; 
+    color: white;
+    --border-radius: 20px; 
+  }
+  
+  ion-button {
+    --border-radius: 20px; 
+  }
+  
+  ion-label {
+    color: #0d47a1; 
+  }
+  

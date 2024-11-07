@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ department.id ? 'Edit Department' : 'Add New Department' }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Department ID</ion-label>
+          <ion-input [(ngModel)]="department.id" type="number" disabled></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Department Name</ion-label>
+          <ion-input [(ngModel)]="department.name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Department Code</ion-label>
+          <ion-input [(ngModel)]="department.code"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" (click)="confirm()">Confirm</ion-button>
+        <ion-button expand="full" color="light" (click)="dismiss()">Cancel</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

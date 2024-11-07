@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Polis Healthy Hospital</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="hero-section">
+      <ion-col size="12">
+        <h1>Welcome to Polis Healthy Hospital Management System</h1>
+        <p>Efficiently manage hospital departments and patient records.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-md="6" size="12">
+        <ion-card routerLink="/folder/departments">
+          <ion-card-header>
+            <ion-card-title>Manage Departments</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            View and manage hospital departments, add new departments, and edit existing ones.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="6" size="12">
+        <ion-card routerLink="/folder/patients">
+          <ion-card-header>
+            <ion-card-title>Manage Patients</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            View and manage patient records, add new patients, and edit existing records.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

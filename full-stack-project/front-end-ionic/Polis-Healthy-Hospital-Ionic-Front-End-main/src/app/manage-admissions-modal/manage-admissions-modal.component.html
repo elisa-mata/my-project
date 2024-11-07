@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Manage Admissions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h2>Admissions</h2>
+
+        <div class="search-bar-container">
+          <ion-searchbar
+            class="custom-searchbar"
+            [(ngModel)]="searchTerm"
+            (ionInput)="filterDepartments($event)"
+          ></ion-searchbar>
+        </div>
+
+        <table class="admissions-table">
+          <thead>
+            <tr>
+              <th>Department</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let department of filteredDepartments">
+              <td>{{ department.name }}</td>
+              <td>
+                <ion-button [disabled]="patient.department.id == department.id" (click)="transfer(department)" color="primary">Transfer</ion-button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="admissions-table">
+          <thead>
+            <tr>
+              <th>Patient</th>
+              <th>Department</th>
+              <th>Reason</th>
+              <th>Cause</th>
+              <th>Discharged</th>
+              <th>Enter date</th>
+              <th>Exit date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let admission of admissions">
+              <td>{{ admission.patient.name }}</td>
+              <td>{{ admission.patient.department.name }}</td>
+              <td>{{ admission.reason }}</td>
+              <td>{{ admission.cause }}</td>
+              <td>{{ admission.discharge ? "Yes" : "No" }}</td>
+              <td>{{ admission.enteringDate | date:'dd-MM-yyyy'}}</td>
+              <td>{{ admission.exitingDate | date:'dd-MM-yyyy'}}</td>
+              <td>
+                <ion-button (click)="confirmDelete(admission.id)" color="primary">Delete</ion-button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

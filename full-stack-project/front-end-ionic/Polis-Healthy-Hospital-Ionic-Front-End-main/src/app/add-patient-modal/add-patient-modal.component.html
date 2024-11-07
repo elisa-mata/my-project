@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ isEditMode ? 'Edit Patient' : 'Add New Patient' }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="styled-item">
+    <ion-label position="floating">Patient Name</ion-label>
+    <ion-input [(ngModel)]="patient.name"></ion-input>
+  </ion-item>
+  <ion-item class="styled-item">
+    <ion-label position="floating">Patient Last Name</ion-label>
+    <ion-input [(ngModel)]="patient.lastName"></ion-input>
+  </ion-item>
+  <ion-item class="styled-item">
+    <ion-label position="floating">Patient Birthdate</ion-label>
+    <ion-datetime presentation="date" display-format="DD-MM-YYYY" picker-format="DD-MM-YYYY" [(ngModel)]="patient.birthDate" name="birthdate" class="custom-datetime"></ion-datetime>
+  </ion-item>
+  <ion-item class="styled-item">
+    <ion-label>Department</ion-label>
+    <ion-select [(ngModel)]="patient.department" name="department">
+      <ion-select-option value="" disabled selected>Select Department</ion-select-option>
+      <ion-select-option *ngFor="let department of departments" [value]="department">
+        {{ department.name }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-footer>
+    <ion-button expand="full" class="confirm-button" (click)="confirm()">Confirm</ion-button>
+    <ion-button expand="full" color="light" (click)="dismiss()">Cancel</ion-button>
+  </ion-footer>
+</ion-content>
